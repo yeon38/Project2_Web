@@ -8,30 +8,25 @@
 <body data-new-gr-c-s-check-loaded-="14.1126.0" data-gr-ext-installed>
     <div class = "container wrapper">
         <div id = "top">
-            <h1> Welcome to 이채연's homepage(22200598) </h1>
+            <h1> Welcome to 22200598's homepage </h1>
             <p> Use the menu to select different Stylesheets</p>
         </div>
         <div class = "wrapper">
             <div id = "menubar">
                 <ul id = "menulist">
                     <li class ="menuitem" onclick  = "restyle(0)">
-                        ::marker
                         Stylesheet 1
                     </li>
                     <li class ="menuitem" onclick  = "restyle(1)">
-                        <!--::marker-->
                         Stylesheet 2
                     </li>
                     <li class ="menuitem" onclick  = "restyle(2)">
-                        <!--::marker-->
-                        Stylesheet 3
+                       Stylesheet 3
                     </li>
                     <li class ="menuitem" onclick  = "restyle(3)">
-                        <!--::marker-->
                         Stylesheet 4
                     </li>
                     <li class ="menuitem" onclick  = "restyle(0)">
-                        <!--::marker-->
                         No Stylesheet
                     </li>
                 </ul>
@@ -42,9 +37,9 @@
                     This is a demonstration of how different stylesheets can change the layout of your HTML page. 
                     You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
                     <br> 
-                    <a href="#" onclick="restyle(0);return false"> Stylesheet1</a>
+                    <a href="style1.html" onclick="restyle(0);return false"> Stylesheet1</a>
                     ,
-                    <a href="#" onclick="restyle(1);return false"> Stylesheet2</a>
+                    <a href="style2.html" onclick="restyle(1);return false"> Stylesheet2</a>
                     ,
                     <a href="#" onclick="restyle(2);return false"> Stylesheet3</a>
                     ,
@@ -56,7 +51,7 @@
                     This page uses DIV elements to group different sections of the HTML page. 
                     Click here to see how the page looks like with no stylesheet:
                     <br>
-                    <a href="#" onclick="nostyles();return false"> No Stylesheet</a>
+                    <a href="nostyle.html" onclick="nostyles();return false"> No Stylesheet</a>
                     .
                 </p>
             </div>
@@ -75,22 +70,8 @@
             odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         </div>
     </div>
-    <script>
-        function noStyles() {
-            document.styleSheets[0].disabled = true;
-            document.styleSheets[1].disabled = true;
-            document.styleSheets[2].disabled = true;
-            document.styleSheets[3].disabled = true;
-        }
-        function restyle(n) {
-            noStyles()
-            document.styleSheets[n].disabled = false;
-        }
-        
-    </script>
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root = "true">
-#shadow-root(open)
     <style>
         div.grammarly-desktop-integration {
             position: absolute;
@@ -113,7 +94,6 @@
     </style>
     <div arial-label="grammarly-desktop-integration" role = "group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;
     isUserDisabled&quot;:false}">
-    ::before
     </div>
 </grammarly-desktop-integration>
 </html>

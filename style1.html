@@ -36,37 +36,91 @@
             margin: 0 210px;
         }
         #sidebar {
-            
+            background-color: #32a4e7;
+            color: #ffffff;
+            padding: 10px;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+        #bottom {
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        }
+        #top h1, #top p, #menulist {
+            margin: 0;
+            padding: 0;
+        }   
+        .menuitem {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+        }
+        .menuitem:hover {
+            background-color: #ffffff;
+        }
+        .menuitem:first-child {
+            background-color: #04AA6D;
+            color: white;
+            font-weight: bold;
+        }
+        a {
+            color: #000000;
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        @media (max-width: 800px){
+            #sidebar {
+                width: auto;
+                position: relative;
+            }
+            #main {
+                margin-right :0;
+            }
+        }
+        @media (max-width: 600px){
+            #menubar {
+                width: auto;
+                float: none;
+            }
+            #main {
+                margin :0;
+            }
         }
     </style>
 </head>
 <body data-new-gr-c-s-check-loaded-="14.1126.0" data-gr-ext-installed>
     <div class = "container wrapper">
         <div id = "top">
-            <h1> Welcome to 이채연's homepage(22200598) </h1>
+            <h1> Welcome to 22200598's homepage </h1>
             <p> Use the menu to select different Stylesheets</p>
         </div>
         <div class = "wrapper">
             <div id = "menubar">
                 <ul id = "menulist">
                     <li class ="menuitem" onclick  = "restyle(0)">
-                        ::marker
                         Stylesheet 1
                     </li>
                     <li class ="menuitem" onclick  = "restyle(1)">
-                        <!--::marker-->
                         Stylesheet 2
                     </li>
                     <li class ="menuitem" onclick  = "restyle(2)">
-                        <!--::marker-->
                         Stylesheet 3
                     </li>
                     <li class ="menuitem" onclick  = "restyle(3)">
-                        <!--::marker-->
                         Stylesheet 4
                     </li>
                     <li class ="menuitem" onclick  = "restyle(0)">
-                        <!--::marker-->
                         No Stylesheet
                     </li>
                 </ul>
@@ -77,9 +131,9 @@
                     This is a demonstration of how different stylesheets can change the layout of your HTML page. 
                     You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
                     <br> 
-                    <a href="#" onclick="restyle(0);return false"> Stylesheet1</a>
+                    <a href="style1.html" onclick="restyle(0);return false"> Stylesheet1</a>
                     ,
-                    <a href="#" onclick="restyle(1);return false"> Stylesheet2</a>
+                    <a href="style2.html" onclick="restyle(1);return false"> Stylesheet2</a>
                     ,
                     <a href="#" onclick="restyle(2);return false"> Stylesheet3</a>
                     ,
@@ -91,7 +145,7 @@
                     This page uses DIV elements to group different sections of the HTML page. 
                     Click here to see how the page looks like with no stylesheet:
                     <br>
-                    <a href="#" onclick="nostyles();return false"> No Stylesheet</a>
+                    <a href="nostyle.html" onclick="nostyles();return false"> No Stylesheet</a>
                     .
                 </p>
             </div>
@@ -112,7 +166,6 @@
     </div>
 </body>
 <grammarly-desktop-integration data-grammarly-shadow-root = "true">
-#shadow-root(open)
     <style>
         div.grammarly-desktop-integration {
             position: absolute;
@@ -135,7 +188,6 @@
     </style>
     <div arial-label="grammarly-desktop-integration" role = "group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;
     isUserDisabled&quot;:false}">
-    ::before
     </div>
 </grammarly-desktop-integration>
 </html>
